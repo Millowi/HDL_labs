@@ -1,0 +1,21 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sim_1/new/adder_tb.sv,1789746342,systemVerilog,,,,adder_tb,,uvm,,,,,,
+C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sim_1/new/alu_tb.sv,1789751988,systemVerilog,,,,alu_tb,,uvm,,,,,,
+C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sim_1/new/full_adder_tb.sv,1789740525,systemVerilog,,,,full_adder_tb,,uvm,,,,,,
+C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sim_1/new/half_adder_tb.sv,1789739058,systemVerilog,,,,half_adder_tb,,uvm,,,,,,
+C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sim_1/new/substractor_tb.sv,1789748078,systemVerilog,,,,substractor_tb,,uvm,,,,,,
+C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/adder.sv,1789744393,systemVerilog,,C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/alu.sv,,adder,,uvm,,,,,,
+C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/alu.sv,1789751509,systemVerilog,,C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/and4.sv,,alu,,uvm,,,,,,
+C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/and4.sv,1789750226,systemVerilog,,C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/full_adder.sv,,and4,,uvm,,,,,,
+C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/full_adder.sv,1789741371,systemVerilog,,C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/half_adder.sv,,full_adder,,uvm,,,,,,
+C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/half_adder.sv,1789738738,systemVerilog,,C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/inv4.sv,,half_adder,,uvm,,,,,,
+C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/inv4.sv,1789750275,systemVerilog,,C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/or4.sv,,inv4,,uvm,,,,,,
+C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/or4.sv,1789750243,systemVerilog,,C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/shl4.sv,,or4,,uvm,,,,,,
+C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/shl4.sv,1789750322,systemVerilog,,C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/shr4.sv,,shl4,,uvm,,,,,,
+C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/shr4.sv,1789750334,systemVerilog,,C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/substractor.sv,,shr4,,uvm,,,,,,
+C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/substractor.sv,1789748833,systemVerilog,,C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/xor4.sv,,substractor,,uvm,,,,,,
+C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/xor4.sv,1789750255,systemVerilog,,C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sim_1/new/alu_tb.sv,,xor4,,uvm,,,,,,
