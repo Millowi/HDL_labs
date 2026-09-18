@@ -24,23 +24,26 @@ module alu(
     input [2:0] op,
     input [3:0] a,
     input [3:0] b,
-    output [3:0] out
+    output [3:0] out,
+    output c_out
     );
     logic [3:0] add_r, sub_r, and_r, or_r, xor_r, inv_r, shl_r, shr_r;
     
+    assign c_out = 0;
+    
     adder ADD4(
-        .a (a_tb),
-        .b (b_tb),
-        .c_in (0),
-        .c_out (0),
+        .a (a),
+        .b (b),
+        .c_in (1'b0),
+        .c_out (c_out),
         .s (add_r)
     );
 
     substractor SUB4(
-        .a (a_tb),
-        .b (b_tb),
-        .c_in (1),
-        .c_out (0),
+        .a (a),
+        .b (b),
+        .c_in (1'b1),
+        .c_out (c_out),
         .s (sub_r)
     );
 
