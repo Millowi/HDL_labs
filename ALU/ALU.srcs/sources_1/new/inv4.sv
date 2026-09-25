@@ -22,7 +22,7 @@
 
 module inv4(
     input [3:0] in,
-    input [3:0] out
+    output [3:0] out
     );
     assign out = ~in;
 endmodule

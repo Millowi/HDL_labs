@@ -30,7 +30,7 @@ module alu(
     logic [3:0] add_r, sub_r, and_r, or_r, xor_r, inv_r, shl_r, shr_r;
     
     assign c_out = 0;
-    
+
     adder ADD4(
         .a (a),
         .b (b),
@@ -87,5 +87,6 @@ module alu(
         (op == 3'b100) ? xor_r :
         (op == 3'b101) ? inv_r :
         (op == 3'b110) ? shl_r : shr_r;
-    
+
 endmodule
+

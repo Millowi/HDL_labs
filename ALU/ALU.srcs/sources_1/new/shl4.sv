@@ -22,7 +22,7 @@
 
 module shl4(
     input [3:0] in,
-    input [3:0] out
+    output [3:0] out
     );
     assign out = in<<1;
 endmodule
