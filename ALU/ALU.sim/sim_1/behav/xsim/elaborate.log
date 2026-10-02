@@ -5,9 +5,7 @@ Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'op_sel_i' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sim_1/new/alu_wrapper_tb.sv:38]
-WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 3 for port 'op' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/alu_wrapper.sv:35]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'out' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/alu_wrapper.sv:38]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 3 for port 'op_sel_i' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sim_1/new/alu_wrapper_tb.sv:38]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -23,6 +21,7 @@ Compiling module xil_defaultlib.inv4
 Compiling module xil_defaultlib.shl4
 Compiling module xil_defaultlib.shr4
 Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.btn_edge_detect
 Compiling module xil_defaultlib.alu_wrapper
 Compiling module xil_defaultlib.alu_wrapper_tb
 Compiling module xil_defaultlib.glbl

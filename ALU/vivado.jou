@@ -3,64 +3,95 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Fri Sep 25 17:13:05 2026
-# Process ID: 18028
+# Start of session at: Fri Oct  2 15:59:05 2026
+# Process ID: 3336
 # Current directory: C:/Users/akollj/Desktop/HDL_labs/ALU
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16492 C:\Users\akollj\Desktop\HDL_labs\ALU\ALU.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8596 C:\Users\akollj\Desktop\HDL_labs\ALU\ALU.xpr
 # Log file: C:/Users/akollj/Desktop/HDL_labs/ALU/vivado.log
 # Journal file: C:/Users/akollj/Desktop/HDL_labs/ALU\vivado.jou
-# Running On: ICT-50130K, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 34013 MB
+# Running On: ICT-50103K, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 34013 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.xpr
 update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-launch_simulation
-source alu_tb.tcl
-update_compile_order -fileset sources_1
-current_wave_config {Untitled 1}
-add_wave {{/alu_tb/ALU}} 
-restart
-run all
-current_wave_config {Untitled 1}
-add_wave {{/alu_tb/ALU/AND4}} 
-restart
-run all
-close_sim
-launch_simulation
-source alu_tb.tcl
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top substractor_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
-close_sim
-launch_simulation
-source substractor_tb.tcl
-close [ open C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/alu_wrapper.sv w ]
-add_files C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/alu_wrapper.sv
-update_compile_order -fileset sources_1
-close_sim
-update_compile_order -fileset sources_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sim_1/new/alu_wrapper_tb.sv w ]
-add_files -fileset sim_1 C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sim_1/new/alu_wrapper_tb.sv
-update_compile_order -fileset sim_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top alu_wrapper_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
 launch_simulation
 source alu_wrapper_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/alu_wrapper_tb/ALU_WR/data_i}} {{/alu_wrapper_tb/ALU_WR/accu_o}} 
+current_wave_config {Untitled 1}
+add_wave {{/alu_wrapper_tb/ALU_WR/ALU/a}} {{/alu_wrapper_tb/ALU_WR/ALU/b}} {{/alu_wrapper_tb/ALU_WR/ALU/out}} {{/alu_wrapper_tb/ALU_WR/ALU/add_r}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/akollj/Desktop/HDL_labs/ALU/alu_wrapper_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/akollj/Desktop/HDL_labs/ALU/alu_wrapper_tb_behav.wcfg
+set_property xsim.view C:/Users/akollj/Desktop/HDL_labs/ALU/alu_wrapper_tb_behav.wcfg [get_filesets sim_1]
 close_sim
 launch_simulation
+open_wave_config C:/Users/akollj/Desktop/HDL_labs/ALU/alu_wrapper_tb_behav.wcfg
 source alu_wrapper_tb.tcl
-current_wave_config {Untitled 5}
-add_wave {{/alu_wrapper_tb/ALU_WR/ALU}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {alu_wrapper_tb_behav.wcfg}
+add_wave {{/alu_wrapper_tb/op_sel_i_tb}} 
+save_wave_config {C:/Users/akollj/Desktop/HDL_labs/ALU/alu_wrapper_tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+close [ open C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/btn_edge_detect.sv w ]
+add_files C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/btn_edge_detect.sv
+update_compile_order -fileset sources_1
+close [ open C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/btn_debouncer.sv w ]
+add_files C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/btn_debouncer.sv
+update_compile_order -fileset sources_1
+close [ open C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/delay_counter.sv w ]
+add_files C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/delay_counter.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/akollj/Desktop/HDL_labs/ALU/alu_wrapper_tb_behav.wcfg
+source alu_wrapper_tb.tcl
+current_wave_config {alu_wrapper_tb_behav.wcfg}
+add_wave {{/alu_wrapper_tb/ALU_WR/BD}} 
+current_wave_config {alu_wrapper_tb_behav.wcfg}
+add_wave {{/alu_wrapper_tb/ALU_WR/BED}} 
+relaunch_sim
+save_wave_config {C:/Users/akollj/Desktop/HDL_labs/ALU/alu_wrapper_tb_behav.wcfg}
+update_compile_order -fileset sources_1
+relaunch_sim
+save_wave_config {C:/Users/akollj/Desktop/HDL_labs/ALU/alu_wrapper_tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {alu_wrapper_tb_behav.wcfg}
+add_wave {{/alu_wrapper_tb/ALU_WR/BED}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/akollj/Desktop/HDL_labs/ALU/alu_wrapper_tb_behav.wcfg}
+save_wave_config {C:/Users/akollj/Desktop/HDL_labs/ALU/alu_wrapper_tb_behav.wcfg}
+save_wave_config {C:/Users/akollj/Desktop/HDL_labs/ALU/alu_wrapper_tb_behav.wcfg}

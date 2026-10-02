@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="alu_wrapper_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="alu_wrapper_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1.721 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="547"></NameColumnWidth>
+      <ValueColumnWidth column_width="246"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/alu_wrapper_tb/clk_tb" type="logic">
+      <obj_property name="ElementShortName">clk_tb</obj_property>
+      <obj_property name="ObjectShortName">clk_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_wrapper_tb/rst_tb" type="logic">
+      <obj_property name="ElementShortName">rst_tb</obj_property>
+      <obj_property name="ObjectShortName">rst_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_wrapper_tb/data_i_tb" type="array">
+      <obj_property name="ElementShortName">data_i_tb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data_i_tb[3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_wrapper_tb/btnu_i_tb" type="logic">
+      <obj_property name="ElementShortName">btnu_i_tb</obj_property>
+      <obj_property name="ObjectShortName">btnu_i_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_wrapper_tb/accu_o_tb" type="array">
+      <obj_property name="ElementShortName">accu_o_tb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">accu_o_tb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_wrapper_tb/flags_o_tb" type="array">
+      <obj_property name="ElementShortName">flags_o_tb[1:0]</obj_property>
+      <obj_property name="ObjectShortName">flags_o_tb[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_wrapper_tb/op_sel_i_tb" type="array">
+      <obj_property name="ElementShortName">op_sel_i_tb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">op_sel_i_tb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group103" type="group">
+      <obj_property name="label">button</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/alu_wrapper_tb/ALU_WR/BED/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/alu_wrapper_tb/ALU_WR/BED/btn_state" type="logic">
+         <obj_property name="ElementShortName">btn_state</obj_property>
+         <obj_property name="ObjectShortName">btn_state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/alu_wrapper_tb/ALU_WR/BED/detection" type="logic">
+         <obj_property name="ElementShortName">detection</obj_property>
+         <obj_property name="ObjectShortName">detection</obj_property>
+      </wvobject>
+      <wvobject fp_name="/alu_wrapper_tb/ALU_WR/BED/btn_current" type="logic">
+         <obj_property name="ElementShortName">btn_current</obj_property>
+         <obj_property name="ObjectShortName">btn_current</obj_property>
+      </wvobject>
+      <wvobject fp_name="/alu_wrapper_tb/ALU_WR/BED/btn_prev" type="logic">
+         <obj_property name="ElementShortName">btn_prev</obj_property>
+         <obj_property name="ObjectShortName">btn_prev</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
