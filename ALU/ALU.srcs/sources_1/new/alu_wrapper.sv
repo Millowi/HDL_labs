@@ -45,22 +45,24 @@ module alu_wrapper (
         .c_out (flags_o[0])
     );
 
-/*    delay_counter DC(
+//comment this for test
+    delay_counter DC(
         .clk (clk),
         .pulse (pulse)
     );
-    
+
     btn_debouncer BD(
         .clk (clk),
         .rst (rst),
         .pulse (pulse),
         .btn_state (btnu_i),
         .btn_debounced (btn_db)
-    ); */
+    ); 
+//
     
     btn_edge_detect BED(
         .clk (clk),
-        .btn_state (btnu_i), //use btn_db for synthesis
+        .btn_state (btn_db), //use btn_db for synthesis, btnu_i for test
         .detection (btn_click)
     );
 

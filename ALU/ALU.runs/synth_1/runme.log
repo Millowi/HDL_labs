@@ -1,0 +1,64 @@
+
+*** Running vivado
+    with args -log alu_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu_wrapper.tcl
+
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source alu_wrapper.tcl -notrace
+Command: synth_design -top alu_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12628
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2300.383 ; gain = 409.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'alu_wrapper' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/alu_wrapper.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/adder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'full_adder' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/full_adder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'half_adder' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/half_adder.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'half_adder' (0#1) [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/half_adder.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'full_adder' (0#1) [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/full_adder.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/adder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'substractor' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/substractor.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'substractor' (0#1) [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/substractor.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'and4' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/and4.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'and4' (0#1) [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/and4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'or4' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/or4.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'or4' (0#1) [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/or4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'xor4' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/xor4.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'xor4' (0#1) [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/xor4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'inv4' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/inv4.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'inv4' (0#1) [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/inv4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'shl4' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/shl4.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'shl4' (0#1) [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/shl4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'shr4' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/shr4.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'shr4' (0#1) [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/shr4.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'delay_counter' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/delay_counter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'delay_counter' (0#1) [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/delay_counter.sv:23]
+CRITICAL WARNING: [Synth 8-5972] variable 'pulse_wr' cannot be written by both continuous and procedural assignments [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/alu_wrapper.sv:51]
+INFO: [Synth 8-6157] synthesizing module 'btn_debouncer' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/btn_debouncer.sv:23]
+ERROR: [Synth 8-91] ambiguous clock in event control [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/btn_debouncer.sv:34]
+ERROR: [Synth 8-6156] failed synthesizing module 'btn_debouncer' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/btn_debouncer.sv:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'alu_wrapper' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sources_1/new/alu_wrapper.sv:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2390.449 ; gain = 499.266
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 0 Warnings, 1 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 16 19:12:35 2026...

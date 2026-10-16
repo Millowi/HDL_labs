@@ -21,6 +21,8 @@ Compiling module xil_defaultlib.inv4
 Compiling module xil_defaultlib.shl4
 Compiling module xil_defaultlib.shr4
 Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.delay_counter_default
+Compiling module xil_defaultlib.btn_debouncer
 Compiling module xil_defaultlib.btn_edge_detect
 Compiling module xil_defaultlib.alu_wrapper
 Compiling module xil_defaultlib.alu_wrapper_tb
