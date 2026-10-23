@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module alu_wrapper (
-    input logic clk,
+    input logic CLK100MHZ,
     input logic rst,
     input logic [3:0] data_i,
     input logic [2:0] op_sel_i,
@@ -47,12 +47,12 @@ module alu_wrapper (
 
 //comment this for test
     delay_counter DC(
-        .clk (clk),
+        .clk (CLK100MHZ),
         .pulse (pulse)
     );
 
     btn_debouncer BD(
-        .clk (clk),
+        .clk (CLK100MHZ),
         .rst (rst),
         .pulse (pulse),
         .btn_state (btnu_i),
@@ -61,13 +61,13 @@ module alu_wrapper (
 //
     
     btn_edge_detect BED(
-        .clk (clk),
+        .clk (CLK100MHZ),
         .btn_state (btn_db), //use btn_db for synthesis, btnu_i for test
         .detection (btn_click)
     );
 
     // Behavioral: the only way to describe a clocked register-dataflow cannot hold state
-    always_ff @(posedge clk or posedge rst) begin
+    always_ff @(posedge CLK100MHZ or posedge rst) begin
         if (rst) begin
             accu <= 4'b0000;
             flags_o <= 2'b00;

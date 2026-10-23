@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Fri Oct 16 19:11:53 2026
-# Process ID: 8500
+# Start of session at: Fri Oct 23 17:18:12 2026
+# Process ID: 18640
 # Current directory: C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.runs/synth_1
 # Command line: vivado.exe -log alu_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu_wrapper.tcl
 # Log file: C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.runs/synth_1/alu_wrapper.vds
 # Journal file: C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.runs/synth_1\vivado.jou
-# Running On: ICT-50103K, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 34013 MB
+# Running On: ICT-50131K, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 34013 MB
 #-----------------------------------------------------------
 source alu_wrapper.tcl -notrace

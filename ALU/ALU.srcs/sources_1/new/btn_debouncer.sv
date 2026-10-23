@@ -29,18 +29,18 @@ module btn_debouncer(
     );
     
     logic [3:0] debouncer_reg;
-    logic out = 0;
+    //logic out = 0;
     
     always @(posedge clk or posedge rst) begin : proc_debounce_reg
         if(rst) begin
             debouncer_reg = '0;
-            out = 0;
+            //out = 0;
             
         end else if (pulse)
             debouncer_reg = {debouncer_reg[2:0], btn_state} ;
        
-        if (&debouncer_reg)
-            out = 1;
+/*        if (&debouncer_reg)
+            out = 1;*/
     end
-    assign btn_debounced = out;
+    assign btn_debounced = &debouncer_reg;
 endmodule
