@@ -32,8 +32,8 @@ module alu_wrapper_tb(
     logic [1:0] flags_o_tb;
     
     alu_wrapper ALU_WR(
-        .clk (clk_tb),
-        .rst (rst_tb),
+        .CLK100MHZ (clk_tb),
+        .reset (rst_tb),
         .data_i (data_i_tb),
         .op_sel_i (op_sel_i_tb),
         .btnu_i (btnu_i_tb),

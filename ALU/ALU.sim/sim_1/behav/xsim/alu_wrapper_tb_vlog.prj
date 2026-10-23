@@ -4,9 +4,7 @@ sv xil_defaultlib  \
 "../../../../ALU.srcs/sources_1/new/alu.sv" \
 "../../../../ALU.srcs/sources_1/new/alu_wrapper.sv" \
 "../../../../ALU.srcs/sources_1/new/and4.sv" \
-"../../../../ALU.srcs/sources_1/new/btn_debouncer.sv" \
 "../../../../ALU.srcs/sources_1/new/btn_edge_detect.sv" \
-"../../../../ALU.srcs/sources_1/new/delay_counter.sv" \
 "../../../../ALU.srcs/sources_1/new/full_adder.sv" \
 "../../../../ALU.srcs/sources_1/new/half_adder.sv" \
 "../../../../ALU.srcs/sources_1/new/inv4.sv" \

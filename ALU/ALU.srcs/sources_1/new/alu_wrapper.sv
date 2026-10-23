@@ -21,7 +21,7 @@
 
 module alu_wrapper (
     input logic CLK100MHZ,
-    input logic rst,
+    input logic reset,
     input logic [3:0] data_i,
     input logic [2:0] op_sel_i,
     input logic btnu_i, // calculate
@@ -31,10 +31,10 @@ module alu_wrapper (
     
     logic [3:0] accu;
     logic [3:0] alu_result;
-    logic previous_btn = 0;
-    logic pulse = 0;
-    logic btn_db = 0;
-    logic btn_click = 0;
+    logic pulse;
+    logic btn_db;
+    logic btn_click;
+    logic carry;
     
 
     alu ALU(
@@ -42,22 +42,22 @@ module alu_wrapper (
         .a (accu), 
         .b (data_i), 
         .out (alu_result), 
-        .c_out (flags_o[0])
+        .c_out (carry)
     );
 
 //comment this for test
-    delay_counter DC(
+   delay_counter DC(
         .clk (CLK100MHZ),
         .pulse (pulse)
     );
 
     btn_debouncer BD(
         .clk (CLK100MHZ),
-        .rst (rst),
+        .rst (reset),
         .pulse (pulse),
         .btn_state (btnu_i),
         .btn_debounced (btn_db)
-    ); 
+    );
 //
     
     btn_edge_detect BED(
@@ -67,14 +67,22 @@ module alu_wrapper (
     );
 
     // Behavioral: the only way to describe a clocked register-dataflow cannot hold state
-    always_ff @(posedge CLK100MHZ or posedge rst) begin
-        if (rst) begin
+    always @(posedge CLK100MHZ or posedge reset) begin : test
+        if (reset) begin
             accu <= 4'b0000;
             flags_o <= 2'b00;
         end
-        else if (btn_click) //perform calculation, synced with clock
+        else if (btn_click == 1) begin //perform calculation, synced with clock
             accu <= alu_result;
-        accu_o <= accu;
+            flags_o[0] <= carry;
+            flags_o[1] <= !(|alu_result);
+            
+        end
     end
-
+/*always_comb begin
+    flags_o[0] = carry;
+    flags_o[1] = !(|accu);
+end*/
+    assign accu_o = accu;
+    
 endmodule

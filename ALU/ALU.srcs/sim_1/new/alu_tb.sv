@@ -25,22 +25,26 @@ module alu_tb(
     );
     logic [3:0] a_tb, b_tb, out_tb, out_calc;
     logic [2:0] op_tb;
+    logic carry_tb;
     
     alu ALU(
         .a (a_tb),
         .b (b_tb),
         .op (op_tb),
-        .out (out_tb)
+        .out (out_tb),
+        .c_out (carry_tb)
     );
     
     initial begin
-        for (int opi = 2; opi <= 7; opi++) begin
+        for (int opi = 0; opi <= 7; opi++) begin
             op_tb = opi;
             for (int ai = 0; ai <= 16; ai++) begin
                 a_tb = ai;
                 for (int bi = 0; bi < 16; bi++) begin
                     b_tb = bi;
-                    assign out_calc = (opi == 3'b010) ? a_tb & b_tb:
+                    assign out_calc = (opi == 3'b000) ? a_tb + b_tb:
+                        (opi == 3'b001) ? a_tb - b_tb:
+                        (opi == 3'b010) ? a_tb & b_tb:
                         (opi == 3'b011) ? a_tb | b_tb :
                         (opi == 3'b100) ? a_tb ^ b_tb :
                         (opi == 3'b101) ? ~a_tb :

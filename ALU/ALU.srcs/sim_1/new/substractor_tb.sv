@@ -24,17 +24,17 @@ module substractor_tb(
 
     );
 
-    logic c_in_tb;
+    logic c_in_tb = 1;
     logic [3:0] a_tb, b_tb;
     logic [3:0] sum_tb;
     logic c_out_tb;
     int sum_calc;
-    logic [4:0] sum_calc_b;
+    logic [3:0] sum_calc_b;
     
     substractor A(
         .a (a_tb),
         .b (b_tb),
-        .c_in (1),
+        .c_in (c_in_tb),
         .c_out (c_out_tb),
         .s (sum_tb)
     );
