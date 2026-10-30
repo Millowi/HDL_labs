@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date             : Fri Oct 23 20:46:57 2026
-| Host             : lx32.intra.ttu.ee running 64-bit SUSE Linux Enterprise Desktop 15 SP5
+| Tool Version     : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date             : Fri Oct 30 16:21:24 2026
+| Host             : ICT-50103K running 64-bit major release  (build 9200)
 | Command          : report_power -file alu_wrapper_power_routed.rpt -pb alu_wrapper_power_summary_routed.pb -rpx alu_wrapper_power_routed.rpx
 | Design           : alu_wrapper
 | Device           : xc7a100tcsg324-1
@@ -53,13 +53,13 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       68 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       22 |     63400 |            0.03 |
+| Slice Logic    |    <0.001 |       67 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       21 |     63400 |            0.03 |
 |   CARRY4       |    <0.001 |        5 |     15850 |            0.03 |
 |   Register     |    <0.001 |       33 |    126800 |            0.03 |
 |   F7/F8 Muxes  |    <0.001 |        3 |     63400 |           <0.01 |
 |   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |    <0.001 |       65 |       --- |             --- |
+| Signals        |    <0.001 |       64 |       --- |             --- |
 | I/O            |    <0.001 |       16 |       210 |            7.62 |
 | Static Power   |     0.097 |          |           |                 |
 | Total          |     0.099 |          |           |                 |

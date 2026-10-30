@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date         : Fri Oct 23 20:45:54 2026
-| Host         : lx32.intra.ttu.ee running 64-bit SUSE Linux Enterprise Desktop 15 SP5
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Fri Oct 30 16:19:53 2026
+| Host         : ICT-50103K running 64-bit major release  (build 9200)
 | Command      : report_utilization -file alu_wrapper_utilization_synth.rpt -pb alu_wrapper_utilization_synth.pb
 | Design       : alu_wrapper
 | Device       : xc7a100tcsg324-1
@@ -31,8 +31,8 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |   22 |     0 |          0 |     63400 |  0.03 |
-|   LUT as Logic          |   22 |     0 |          0 |     63400 |  0.03 |
+| Slice LUTs*             |   21 |     0 |          0 |     63400 |  0.03 |
+|   LUT as Logic          |   21 |     0 |          0 |     63400 |  0.03 |
 |   LUT as Memory         |    0 |     0 |          0 |     19000 |  0.00 |
 | Slice Registers         |   33 |     0 |          0 |    126800 |  0.03 |
 |   Register as Flip Flop |   33 |     0 |          0 |    126800 |  0.03 |
@@ -149,15 +149,14 @@ Warning! LUT value is adjusted to account for LUT combining.
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     |   23 |        Flop & Latch |
-| LUT6     |   11 |                 LUT |
+| LUT6     |   12 |                 LUT |
 | IBUF     |   10 |                  IO |
 | FDCE     |   10 |        Flop & Latch |
 | OBUF     |    6 |                  IO |
 | LUT4     |    6 |                 LUT |
 | CARRY4   |    5 |          CarryLogic |
 | MUXF7    |    3 |               MuxFx |
-| LUT5     |    3 |                 LUT |
-| LUT3     |    1 |                 LUT |
+| LUT5     |    2 |                 LUT |
 | LUT2     |    1 |                 LUT |
 | LUT1     |    1 |                 LUT |
 | BUFG     |    1 |               Clock |

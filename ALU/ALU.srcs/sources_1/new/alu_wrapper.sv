@@ -46,6 +46,7 @@ module alu_wrapper (
     );
 
 //comment this for test
+/*
    delay_counter DC(
         .clk (CLK100MHZ),
         .pulse (pulse)
@@ -57,12 +58,12 @@ module alu_wrapper (
         .pulse (pulse),
         .btn_state (btnu_i),
         .btn_debounced (btn_db)
-    );
+    );*/
 //
     
     btn_edge_detect BED(
         .clk (CLK100MHZ),
-        .btn_state (btn_db), //use btn_db for synthesis, btnu_i for test
+        .btn_state (btnu_i), //use btn_db for synthesis, btnu_i for test
         .detection (btn_click)
     );
 

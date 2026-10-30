@@ -39,26 +39,24 @@ module adder_tb(
     
     initial begin
         c_in_tb = 0;
-        for (int ai = 0; ai <= 16; ai++) begin
+        for (int ai = 0; ai < 16; ai++) begin
             a_tb = ai;
             for (int bi = 0; bi < 16; bi++) begin
                 b_tb = bi;
                 sum_calc = ai + bi;
                 #10;
-                assert (sum_tb == sum_calc) $display("");
-                    else $error("sum_tb = %b (%d), must be %b (%d)", sum_tb, sum_tb, sum_calc, sum_calc);
+                assert (sum_tb != sum_calc) $error("sum_tb = %b (%d), must be %b (%d)", sum_tb, sum_tb, sum_calc, sum_calc);
             end
         end
         
         c_in_tb = 1;
-        for (int ai = 0; ai <= 16; ai++) begin
+        for (int ai = 0; ai < 16; ai++) begin
             a_tb = ai;
             for (int bi = 0; bi < 16; bi++) begin
                 b_tb = bi;
                 sum_calc = ai + bi;
                 #10;
-                assert (sum_tb == sum_calc) $display("");
-                    else $error("sum_tb = %b (%d), must be %b (%d)", sum_tb, sum_tb, sum_calc, sum_calc);
+                assert (sum_tb == sum_calc) $error("sum_tb = %b (%d), must be %b (%d)", sum_tb, sum_tb, sum_calc, sum_calc);
             end
         end
         $stop;

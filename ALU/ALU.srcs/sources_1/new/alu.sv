@@ -88,7 +88,7 @@ module alu(
         (op == 3'b101) ? inv_r :
         (op == 3'b110) ? shl_r : shr_r;
     
-    assign c_out = (op == 3'b000) ? carry_add : carry_sub;
+    assign c_out = (op == 3'b000) ? carry_add : (op == 3'b001) ? carry_sub : 0;
 
 endmodule
 

@@ -56,7 +56,7 @@ module alu_wrapper_tb(
                     data_i_tb = ai;
                     // simulate clock and button for logic operations
                     for (int i = 0; i < 100; i++) begin
-                        clk_tb = clk_tb ^ 1;
+                        clk_tb = clk_tb ^ 1; //!clk
                         if (!(i % 10))
                             btnu_i_tb = btnu_i_tb ^ 1;
                         #10;

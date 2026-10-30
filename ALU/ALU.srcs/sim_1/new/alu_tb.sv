@@ -38,7 +38,7 @@ module alu_tb(
     initial begin
         for (int opi = 0; opi <= 7; opi++) begin
             op_tb = opi;
-            for (int ai = 0; ai <= 16; ai++) begin
+            for (int ai = 0; ai < 16; ai++) begin
                 a_tb = ai;
                 for (int bi = 0; bi < 16; bi++) begin
                     b_tb = bi;
@@ -50,8 +50,8 @@ module alu_tb(
                         (opi == 3'b101) ? ~a_tb :
                         (opi == 3'b110) ? a_tb<<1 : a_tb>>1;
                     #10;
-                    assert (out_tb == out_calc) $display("");
-                            else $error("out_tb = %b (%d), must be %b (%d), op = %b", out_tb, out_tb, out_calc, out_calc, opi);
+                    assert (out_tb != out_calc) else $error("out_tb = %b (%d), must be %b (%d), op = %b", out_tb, out_tb, out_calc, out_calc, opi);
+                            
                 end
             end
         end

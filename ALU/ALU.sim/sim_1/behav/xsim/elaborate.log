@@ -1,11 +1,11 @@
 Vivado Simulator v2023.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: /cad/x_23/Vivado/2023.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot alu_wrapper_tb_behav xil_defaultlib.alu_wrapper_tb xil_defaultlib.glbl -log elaborate.log 
-Using 8 slave threads.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot alu_wrapper_tb_behav xil_defaultlib.alu_wrapper_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 3 for port 'op_sel_i' [/home/akollj/HDL_labs/ALU/ALU.srcs/sim_1/new/alu_wrapper_tb.sv:38]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 3 for port 'op_sel_i' [C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sim_1/new/alu_wrapper_tb.sv:38]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
