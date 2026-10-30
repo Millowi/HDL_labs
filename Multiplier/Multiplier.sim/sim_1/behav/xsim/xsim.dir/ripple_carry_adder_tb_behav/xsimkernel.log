@@ -1,4 +1,7 @@
-Running: xsim.dir/ripple_carry_adder_tb_behav/xsimk.exe -simmode gui -wdb ripple_carry_adder_tb_behav.wdb -simrunnum 0 -socket 50616
+Running: xsim.dir/ripple_carry_adder_tb_behav/xsimk.exe -simmode gui -wdb ripple_carry_adder_tb_behav.wdb -simrunnum 0 -socket 53141
 Design successfully loaded
-Design Loading Memory Usage: 9620 KB (Peak: 9620 KB)
+Design Loading Memory Usage: 9632 KB (Peak: 9632 KB)
 Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 10224 KB (Peak: 10224 KB)
+Simulation CPU Usage: 31 ms

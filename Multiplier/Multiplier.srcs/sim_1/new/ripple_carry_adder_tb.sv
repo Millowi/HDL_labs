@@ -19,19 +19,18 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-`define WIDTH 4
 
-module ripple_carry_adder_tb(
+module ripple_carry_adder_tb#(parameter int n = 4)(
     );
-    logic [`WIDTH:0] A_tb, B_tb;
-    logic [`WIDTH:0] sum_tb, sum_calc;
+    logic [n:0] A_tb, B_tb;
+    logic [n:0] sum_tb, sum_calc;
     
-    ripple_carry_adder #(`WIDTH) u_add4 (
+    ripple_carry_adder #(n) u_add4 (
     .A (A_tb), 
     .B (B_tb),
     .Cin (1'b0),
-    .S (sum_tb[`WIDTH-1:0]),
-    .Cout (sum_tb[`WIDTH])
+    .S (sum_tb[n-1:0]),
+    .Cout (sum_tb[n])
     );
     
     initial begin

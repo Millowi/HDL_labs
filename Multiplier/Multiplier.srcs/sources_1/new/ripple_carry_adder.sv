@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module ripple_carry_adder
+module ripple_carry_adder // have to use generate
     #(parameter int n = 4)
     (input logic [n-1:0] A, B,
     input logic Cin,
@@ -29,7 +29,7 @@ module ripple_carry_adder
     
     logic [n:0] sum;
     
-    assign sum = A + B + Cin;
+    assign sum = A + B + Cin; // not defined structure
     assign S = sum[n-1:0];
     assign Cout = sum[n];
     

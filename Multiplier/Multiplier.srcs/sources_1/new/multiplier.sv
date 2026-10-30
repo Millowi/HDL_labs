@@ -27,24 +27,33 @@ module multiplier#(parameter int n = 4)
     );
 
 logic sum[n*2-1:0];
-logic [n-1:0] array_signal [0:n-1];
+logic [n-1:0] A_array [0:n-1];
+logic [n-1:0] sum_array [0:n-1];
     
 //if (B[0]) array_signal[0] = A;
 
-assign array_signal[0] = A & {n{B[0]}};
+
 
 generate    
     for (genvar i = 0; i < n-1; i++) begin : gen_multiplier
+        //logic [n-1:0] adder_out;
+        //logic adder_cout;
+        assign A_array[i] = A & {n{B[i]}};
+    
         ripple_carry_adder ADD(
-            .A (array_signal[i]),
+            .A (A_array[i+1]),
             .B (sum[i+n:i+1]),
             .Cin (1'b0),
             .S (sum[i+n:i+1]),
             .Cout (sum[i+n+1])
             );
+            
+        //assign sum[i+n:i+1] = adder_out;
+        //assign sum[i+n+1] = adder_cout;
     end
+    assign sum[0] = A_array[0][0];
 endgenerate 
 
-//assign S = sum;
+//assign S = sum;sum[i+n:i+1]
     
 endmodule
