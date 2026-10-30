@@ -45,7 +45,8 @@ module adder_tb(
                 b_tb = bi;
                 sum_calc = ai + bi;
                 #10;
-                assert (sum_tb != sum_calc) $error("sum_tb = %b (%d), must be %b (%d)", sum_tb, sum_tb, sum_calc, sum_calc);
+                assert (sum_tb == sum_calc) $display("");
+                    else $error("sum_tb = %b (%d), must be %b (%d)", sum_tb, sum_tb, sum_calc, sum_calc);
             end
         end
         
@@ -56,7 +57,8 @@ module adder_tb(
                 b_tb = bi;
                 sum_calc = ai + bi;
                 #10;
-                assert (sum_tb == sum_calc) $error("sum_tb = %b (%d), must be %b (%d)", sum_tb, sum_tb, sum_calc, sum_calc);
+                assert (sum_tb == sum_calc) $display("");
+                    else $error("sum_tb = %b (%d), must be %b (%d)", sum_tb, sum_tb, sum_calc, sum_calc);
             end
         end
         $stop;

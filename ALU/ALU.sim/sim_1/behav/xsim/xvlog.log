@@ -26,5 +26,3 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/akollj/Desktop/HDL_l
 INFO: [VRFC 10-311] analyzing module xor4
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.srcs/sim_1/new/alu_wrapper_tb.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module alu_wrapper_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/akollj/Desktop/HDL_labs/ALU/ALU.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
