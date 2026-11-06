@@ -26,11 +26,21 @@ module ripple_carry_adder // have to use generate
     input logic Cin,
     output logic [n-1:0] S,
     output logic Cout);
+     
+    logic carry[n:0];
+    assign carry[0] = Cin;
     
-    logic [n:0] sum;
+    generate        
+        for (genvar i = 0; i < n; i++) begin : gen_full_adders            
+            full_adder FA (
+            .a   (A[i]),
+            .b   (B[i]),
+            .c_in (carry[i]),
+            .sum (S[i]),
+            .c_out(carry[i+1]));        
+        end
+    endgenerate
     
-    assign sum = A + B + Cin; // not defined structure
-    assign S = sum[n-1:0];
-    assign Cout = sum[n];
+    assign Cout = carry[n];
     
 endmodule

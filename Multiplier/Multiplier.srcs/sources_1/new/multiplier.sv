@@ -26,34 +26,29 @@ module multiplier#(parameter int n = 4)
     output logic [n*2-1:0] S
     );
 
-logic sum[n*2-1:0];
-logic [n-1:0] A_array [0:n-1];
-logic [n-1:0] sum_array [0:n-1];
-    
-//if (B[0]) array_signal[0] = A;
+logic [n-1:0] A_array [0:n-2];
+logic [n:0] Sum_array [0:n-1];
 
-
+assign Sum_array[0][n-1:0] = (A & {n{B[0]}});
+assign Sum_array[0][n] = 0;
 
 generate    
     for (genvar i = 0; i < n-1; i++) begin : gen_multiplier
-        //logic [n-1:0] adder_out;
-        //logic adder_cout;
-        assign A_array[i] = A & {n{B[i]}};
+
+        assign A_array[i] = A & {n{B[i+1]}};
     
         ripple_carry_adder ADD(
-            .A (A_array[i+1]),
-            .B (sum[i+n:i+1]),
+            .A (A_array[i]),
+            .B (Sum_array[i][n:1]),
             .Cin (1'b0),
-            .S (sum[i+n:i+1]),
-            .Cout (sum[i+n+1])
+            .S (Sum_array[i+1][n-1:0]),
+            .Cout (Sum_array[i+1][n])
             );
             
-        //assign sum[i+n:i+1] = adder_out;
-        //assign sum[i+n+1] = adder_cout;
+        assign S[i] = Sum_array[i][0];
     end
-    assign sum[0] = A_array[0][0];
 endgenerate 
 
-//assign S = sum;sum[i+n:i+1]
+assign S[n*2-1:n*2-1-n] = Sum_array[n-1][n:0];
     
 endmodule
